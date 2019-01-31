@@ -36,7 +36,7 @@
         <Label Content="Zlecenie:" Grid.Row="0" Grid.Column="1" Margin="15,5,5,5" Grid.ColumnSpan="2" FontSize="24" VerticalAlignment="Bottom" FontStyle="Italic" FontWeight="Bold" />
         <Label Content="Grupa:" Grid.Row="2" Grid.Column="1" Margin="15,5,5,5" Grid.ColumnSpan="2" FontSize="24" VerticalAlignment="Bottom" FontStyle="Italic" FontWeight="Bold" />
         <ComboBox x:Name="CBzlecenia" Text="Wybierz zlecenie ..." Grid.Row="1" Grid.Column="1" Margin="10,5,5,5" Width="220" Grid.ColumnSpan="2" FontSize="18" HorizontalAlignment="Left" BorderThickness="1" SelectionChanged="CBzlecenia_SelectionChanged" Background="#FF32C832" IsEditable="True"/>
-        <Button Content="Nowe Zlecenie" Grid.Row="1" Grid.Column="3" Width="115" Margin="0,5,5,5" FontSize="14" HorizontalAlignment="Left" Click="Button_Click">
+        <Button x:Name="ButtonNoweZlecenie" Content="Nowe Zlecenie" Grid.Row="1" Grid.Column="3" Width="115" Margin="0,5,5,5" FontSize="14" HorizontalAlignment="Left" Click="ButtonNoweZlecenie_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF32C832" Offset="1"/>
@@ -45,7 +45,7 @@
             </Button.Background>
         </Button>
         <ComboBox x:Name="CBgrupy" Text="Wybierz grupę ..." Grid.Row="3" Grid.Column="1" Margin="10,5,5,5" Width="220" Grid.ColumnSpan="2" FontSize="18" HorizontalAlignment="Left" BorderThickness="1" IsEditable="True" SelectionChanged="CBgrupy_SelectionChanged"/>
-        <Button Content="Nowa Grupa" Grid.Row="3" Grid.Column="3" Width="115" Margin="0,5,5,5" FontSize="14" HorizontalAlignment="Left" FontFamily="Tahoma">
+        <Button x:Name="ButtonNowaGrupa" Content="Nowa Grupa" Grid.Row="3" Grid.Column="3" Width="115" Margin="0,5,5,5" FontSize="14" HorizontalAlignment="Left" FontFamily="Tahoma">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF32C832" Offset="1"/>

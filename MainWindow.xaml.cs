@@ -57,10 +57,11 @@ namespace Dzienniki
             this.Close();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void ButtonNoweZlecenie_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show("Tylko do celow testowych");
         }
+
 
         /// <summary>
         ///  Metody
