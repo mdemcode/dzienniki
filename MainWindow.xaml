@@ -5,8 +5,68 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Dzienniki"
         mc:Ignorable="d"
-        Title="MainWindow" Height="750" Width="1200" Top="0" Left="0">
+        Title="Dzienniki Spawania" 
+        Height="300" Width="390" Top="100" Left="100" 
+        MaxWidth="410" MaxHeight="400"
+        Background="YellowGreen"
+        FontFamily="Tahoma" WindowStyle="None" 
+        AllowsTransparency="True" Opacity="0.9" Activated="Window_Activated">
     <Grid>
-        
+        <Grid.Background>
+            <ImageBrush ImageSource="obrSpaw.png" Opacity="0.5"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="15" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="15" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="120" />
+            <ColumnDefinition Width="120" />
+            <ColumnDefinition Width="120" />
+            <ColumnDefinition Width="10" />
+        </Grid.ColumnDefinitions>
+        <Rectangle Grid.Row="5" Fill="YellowGreen" Grid.ColumnSpan="5" Grid.RowSpan="3" Margin="0,0,-5,-11" />
+        <Label Content="Zlecenie:" Grid.Row="0" Grid.Column="1" Margin="15,5,5,5" Grid.ColumnSpan="2" FontSize="24" VerticalAlignment="Bottom" FontStyle="Italic" FontWeight="Bold" />
+        <Label Content="Grupa:" Grid.Row="2" Grid.Column="1" Margin="15,5,5,5" Grid.ColumnSpan="2" FontSize="24" VerticalAlignment="Bottom" FontStyle="Italic" FontWeight="Bold" />
+        <ComboBox x:Name="CBzlecenia" Text="Wybierz zlecenie ..." Grid.Row="1" Grid.Column="1" Margin="10,5,5,5" Width="220" Grid.ColumnSpan="2" FontSize="18" HorizontalAlignment="Left" BorderThickness="1" SelectionChanged="CBzlecenia_SelectionChanged" Background="#FF32C832" IsEditable="True"/>
+        <Button Content="Nowe Zlecenie" Grid.Row="1" Grid.Column="3" Width="115" Margin="0,5,5,5" FontSize="14" HorizontalAlignment="Left">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF32C832" Offset="1"/>
+                    <GradientStop Color="White" Offset="0.7"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <ComboBox x:Name="CBgrupy" Text="Wybierz grupę ..." Grid.Row="3" Grid.Column="1" Margin="10,5,5,5" Width="220" Grid.ColumnSpan="2" FontSize="18" HorizontalAlignment="Left" BorderThickness="1" IsEditable="True" SelectionChanged="CBgrupy_SelectionChanged"/>
+        <Button Content="Nowa Grupa" Grid.Row="3" Grid.Column="3" Width="115" Margin="0,5,5,5" FontSize="14" HorizontalAlignment="Left" FontFamily="Tahoma">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF32C832" Offset="1"/>
+                    <GradientStop Color="White" Offset="0.7"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="ButtonOpisSpoin" Content="Opis Spoin" Grid.Row="6" Grid.Column="1" Width="105" Height="50" Margin="10,0,0,0" IsEnabled="False" FontWeight="Bold" HorizontalAlignment="Left" BorderThickness="0" Background="#FF32C832" BorderBrush="#FF0F0101" FontSize="14">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="ButtonGenerowanieDz" Content="Generowanie&#xD;&#xA;Dzienników" Grid.Row="6" Grid.Column="2" Height="50" Width="105" Margin="10,0,0,0" IsEnabled="False" FontWeight="Bold" HorizontalAlignment="Left" BorderThickness="0" Background="#FF32C832" BorderBrush="#FF130404" FontSize="14">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="ButtonZamknij" Content="Zamknij" Grid.Row="6" Grid.Column="3" Height="50" Width="105" Margin="10,0,0,0" HorizontalAlignment="Left" BorderThickness="0" Background="#FF32C832" Click="ButtonZamknij_Click" FontSize="14">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
     </Grid>
 </Window>

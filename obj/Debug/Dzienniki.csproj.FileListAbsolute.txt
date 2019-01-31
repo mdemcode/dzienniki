@@ -1,7 +1,6 @@
 C:\Users\Michael_\source\repos\Dzienniki\Dzienniki\bin\Debug\Dzienniki.exe.config
 C:\Users\Michael_\source\repos\Dzienniki\Dzienniki\bin\Debug\Dzienniki.exe
 C:\Users\Michael_\source\repos\Dzienniki\Dzienniki\bin\Debug\Dzienniki.pdb
-C:\Users\Michael_\source\repos\Dzienniki\Dzienniki\obj\Debug\Dzienniki.csprojAssemblyReference.cache
 C:\Users\Michael_\source\repos\Dzienniki\Dzienniki\obj\Debug\MainWindow.g.cs
 C:\Users\Michael_\source\repos\Dzienniki\Dzienniki\obj\Debug\App.g.cs
 C:\Users\Michael_\source\repos\Dzienniki\Dzienniki\obj\Debug\Dzienniki_MarkupCompile.cache
@@ -13,3 +12,4 @@ C:\Users\Michael_\source\repos\Dzienniki\Dzienniki\obj\Debug\Dzienniki.csproj.Ge
 C:\Users\Michael_\source\repos\Dzienniki\Dzienniki\obj\Debug\Dzienniki.csproj.CoreCompileInputs.cache
 C:\Users\Michael_\source\repos\Dzienniki\Dzienniki\obj\Debug\Dzienniki.exe
 C:\Users\Michael_\source\repos\Dzienniki\Dzienniki\obj\Debug\Dzienniki.pdb
+C:\Users\Michael_\source\repos\Dzienniki\Dzienniki\obj\Debug\Dzienniki.csprojAssemblyReference.cache
